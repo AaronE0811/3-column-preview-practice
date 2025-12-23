@@ -1,0 +1,102 @@
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px 0;
+    margin: 0;
+}
+.card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: stretch;
+    height: auto;
+    width: 60%;
+}
+.sedan{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: hsl(31, 77%, 52%);
+    padding: 35px;
+    border-radius: 5px 0 0 5px;
+    
+}
+.suv{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(184, 100%, 22%);
+    padding: 35px;
+    justify-content: space-between;
+}
+.luxury{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(179, 100%, 13%);
+    padding: 35px;
+    border-radius: 0 5px 5px 0;
+    justify-content: space-between;
+}
+img{
+    margin-bottom: 25px;
+    width: 70px;
+}
+a{
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+    margin-bottom: 100px;
+    text-decoration: none;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+h1{
+    color: white;
+    margin-bottom: 20px;
+}
+button{
+    width: 100%;
+    background-color: hsl(0, 0%, 95%);
+    height: 50px;
+}
+.btn{
+    width: 50%;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 15px;
+    border: none;
+
+}
+#btn1{
+    color: hsl(31, 77%, 52%);
+}
+#btn2{
+    color: hsl(184, 100%, 22%);
+}
+#btn3{
+    color: hsl(179, 100%, 13%);
+}
+
+/*mobile*/
+@media(max-width: 768px){
+    body{
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card{
+        grid-template-columns: 1fr;
+        width: 90%;
+        gap: 0;
+    }
+    .sedan{
+        border-radius: 5px 5px 0 0;
+    }
+    .luxury{
+        border-radius: 0 0 5px 5px;
+    }
+
+    
+}
